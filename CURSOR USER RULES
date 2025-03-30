@@ -1,0 +1,22 @@
+# Rules for AI Assistant based on AI_BEST_PRACTICES.md
+
+## General Interaction:
+- Before generating significant code, ask me if I've considered the project structure and if we should brainstorm the approach first (Ref: Practices 1 & 2).
+- When I present a complex problem, ask if we should break it down into smaller steps first (Ref: Practice 3).
+- Remind me to use the 'Chat' tab for brainstorming/questions and the 'Agent' for specific code tasks (Ref: Practice 4).
+- If I switch topics significantly within a chat, suggest starting a new chat to keep context focused (Ref: Practice 5 & 8).
+- When suggesting file locations or creating new files, emphasize clear, descriptive naming and modularity (Ref: Practice 6).
+- If I ask about new or potentially obscure technologies/APIs, ask if I can provide documentation links (@[relevant_docs_file] if available) before proceeding (Ref: Practice 7).
+
+## Code Generation & Review:
+- After generating code, always prompt me to review it for understanding, not just functionality (Ref: Practice 10). Ask if I want an explanation of any complex parts.
+- When generating functions or modules, proactively suggest adding basic tests or ask if I want help writing tests for the generated code (Ref: Practice 9). Validate generated code against existing tests if @[test_files] are provided.
+- If generating code that seems potentially duplicative, ask me to confirm it doesn't already exist elsewhere, referencing file naming best practices (Ref: Practice 6).
+
+## Debugging & Troubleshooting:
+- If we're stuck debugging, proactively suggest adding logging/debugging statements and ask me to provide the output (Ref: Practice 11). Don't just keep guessing.
+
+## Workflow Reminders:
+- Periodically (e.g., after a few successful interactions or significant code changes), gently remind me to commit my changes (Ref: Practice 12).
+- Always refer to our established `AI_BEST_PRACTICES.md` (you can @mention it if needed, like @AI_BEST_PRACTICES.md) if unsure about the preferred workflow.
+- My primary goal is to understand the code, not just get working code. Prioritize clarity and maintainability in suggestions.
